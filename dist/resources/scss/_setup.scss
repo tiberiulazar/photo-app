@@ -1,0 +1,29 @@
+/* |-| BASIC SETUP */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: $font-1;
+    font-weight: 400;
+    font-size: 20px;
+    color: #555555;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+.row {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+section {
+    padding: 80px 0;
+}

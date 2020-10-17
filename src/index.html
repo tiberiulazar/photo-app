@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- FONTS -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="resources/css/main.css" />
+
+  <title>My website</title>
+</head>
+
+<body>
+  <div class="popup__wrapper">
+    <div class="add__coll__popup">
+      <h2>Add new collection</h2>
+      <div class="add__coll__popup__name">
+        <label for="add__coll__name">Collection name</label>
+        <input required id="add__coll__name" name="nume" type="text" value="" placeholder="Collection name" />
+      </div>
+      <div class="add__coll__popup__description">
+        <label for="add__coll_description">Collection description</label>
+        <textarea id="add__coll__description" name="collection_description" value=""
+          placeholder="Collection description"></textarea>
+      </div>
+      <div class="add__coll__popup__btns">
+        <a href="#" class="add__coll__popup__submit submit__popup">Add collection</a>
+        <a href="#" class="add__coll__popup__close close__popup">Close</a>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <ul class="header-nav">
+      <li class="app__item">
+        <span class="app__item__info">312</span>
+        <ion-icon class="app__item__icon" name="images-outline"></ion-icon>
+      </li>
+      <li class="app__item">
+        <span class="app__item__info">Jon Doe</span>
+        <ion-icon class="app__item__icon" name="person"></ion-icon>
+      </li>
+      <li class="app__item">
+        <span class="app__item__info">Light Theme</span>
+        <ion-icon class="app__item__icon" name="contrast"></ion-icon>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="main__app">
+    <div class="left__side">
+      <div class="collections__list">
+        <div class="collections__list__items">
+          <!-- <div class="collections__list__item">
+              <a href="#" class="collections__list__item__name">
+                <p>Collection name</p>
+              </a>
+              <a href="#" class="delete__coll__btn">
+                <ion-icon
+                  class="delete__collection collections__list__item__icon"
+                  name="trash"
+                ></ion-icon>
+              </a>
+            </div> -->
+        </div>
+
+        <div class="collections__list__item add__collection">
+          <a href="#" class="collections__list__item__name">
+            <p>Add new collection</p>
+          </a>
+          <a href="#" class="delete__coll__btn">
+            <ion-icon class="delete__collection collections__list__item__icon" name="add-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="right__side">
+      <div class="search__box">
+        <input class="search__input" type="text" placeholder="e.g: new york" name="" value="" />
+        <button class="search__submit">Search</button>
+      </div>
+      <div class="search__state active">
+
+        <div class="no__photos__yet">
+          <div class="no__photos__icon">
+            <ion-icon name="images-outline"></ion-icon>
+          </div>
+          <h2>
+            Search any image you want
+          </h2>
+        </div>
+
+        <div class="search__error active">
+          <div class="no__photos__icon">
+            <ion-icon name="sad-outline"></ion-icon>
+          </div>
+          <h2>
+            Error! Nothing found there
+          </h2>
+        </div>
+
+        <div class="search__info"></div>
+
+        <div class="images">
+          <!-- <div class="images__container">
+            <img
+              src="https://images.unsplash.com/photo-1554629907-479bff71f153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=800" />
+            <a href="#" class="images__container__info">
+              <div class="info__wrapper">
+  
+                <div class="images__container__info__link">
+                  <ion-icon name="link-outline"></ion-icon> Click for unsplash
+                  link
+                </div>
+                <div>
+                  <ion-icon name="hand-left-outline"></ion-icon> Drag & Drop to
+                  save in collection
+                </div>
+              </div>
+            </a>
+          </div> -->
+
+
+        </div>
+        <div class="images__pagination">
+          <a href="#" class="images__pagination__left prev__page">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </a>
+          <div class="images__pagination__number"></div>
+          <a href="#" class="images__pagination__right next__page">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="photo__state active"></div>
+
+    </div>
+
+    <!-- <div class="photo__state active">
+          <div class="photo__image">
+            <a href="#"
+              ><img
+                src="https://images.unsplash.com/photo-1510531704581-5b2870972060?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyNzU5MH0"
+                <alt="photography of school room"
+            /></a>
+          </div>
+
+          <a class="photo__user" href="userlink">@user</a>
+          <ul class="photo__tags">
+            <li class="photo__tag">
+              <a class="photo__tag__link" href="#">
+                Tag 1
+              </a>
+            </li>
+            <li class="photo__tag">
+              <a class="photo__tag__link" href="#">
+                Tag 2
+              </a>
+            </li>
+          </ul>
+          <p class="photo__description">Photo description</p>
+          <p class="photo__author">by Author name</p>
+        </div> -->
+    </div>
+  </section>
+
+  <!-- SCRIPTS -->
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  <script type="text/javascript" src="resources/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+/* |-| MEDIA QUERIES MIXINS */
+
+
+/* from big tablet to 1200: widths smaller than the 1140px row */
+@mixin L {
+    @media only screen and (max-width:1260px){
+        @content;
+    }  
+}
+
+
+
+/* Small tablets to big tablet: from 768 to 1023 */
+@mixin ML {
+    @media only screen and (max-width:1023px){
+            @content;
+
+    }
+}
+
+
+
+/* Small phones to small tablets: from 481 to 767 */
+@mixin M {
+    @media only screen and (max-width:767px){
+            @content;
+    }
+}
+    
+
+
+/* small phones: from 0 to 480 */
+@mixin S {
+    @media only screen and (max-width:480px){
+            @content;
+    }
+}
+
+/* custom media query */
+
+@mixin C($width) {
+    @media only screen and (max-width:$width){
+            @content;
+    }
+}
+
+
+// |*| MIXINS BLOCKS
+
+

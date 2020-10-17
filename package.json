@@ -1,0 +1,40 @@
+{
+  "name": "boilerplate-v1.2",
+  "version": "1.0.0",
+  "description": "boilerplate v1.2",
+  "main": "index.js",
+  "scripts": {
+    "sass-comp": "sass --watch dist/resources/scss/main.scss dist/resources/css/main.css",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiberiulazar/boilerplate.git"
+  },
+  "author": "Tiberiu Lazar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiberiulazar/boilerplate/issues"
+  },
+  "homepage": "https://github.com/tiberiulazar/boilerplate#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^4.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "node-fetch": "^2.6.0",
+    "sass": "^1.26.3",
+    "save-dev": "0.0.1-security",
+    "uniqid": "^5.2.0",
+    "unsplash-js": "^6.0.0"
+  }
+}
